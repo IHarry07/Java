@@ -8,17 +8,17 @@ public class Oper1 {
 		String str;
 		// 더하기 +
 		num = 3 + 2;                  // 숫자의 더하기
-		str = "Hello " + "Java";       // 문자의 더하기
+		//str = "Hello " + "Java";       // 문자의 더하기
 		// 빼기 -
 		num = 3 - 2;
 		// 곱하기 *
-		num = 3 * 2;
+		num = 9100 * 21000;
 		// 나누기 /
-		num = 3 / 2;
+		//num = 3 / 2;
 		// 나머지 구하기 %
-		num = 3 % 2;
+		//num = 3 % 2;
 		// 출력
 		System.out.println(num);
-		System.out.println(str);				
+		//System.out.println(str);				
 	}
 }

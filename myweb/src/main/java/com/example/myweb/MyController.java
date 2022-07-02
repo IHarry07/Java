@@ -12,21 +12,25 @@ public class MyController {
 	public String indexPage() {
 		return "index";
 	}
+
 	@GetMapping("/oper")           // localhost:8081/oper
-	public String oper(Model model, @RequestParam("num1")String num) {
-		String msg = "숫자를 입력하세요";
-		int age = Integer.parseInt(num);
-		if(age >= 20) {
-			msg = "성인 입니다";
-		}else if(age > 13) {
-			msg = "청소년 입니다";
-		}else if (age > 100) {
-			msg = "인터넷이라고 장난치면 안돼요~";
+	public String oper(Model model,
+			@RequestParam("id") String id,
+			@RequestParam("pw") String pw
+			) 
+	{
+		String msg = "";
+		if (!(id.equals("hello"))){
+			msg = "일치하는 아이디가 없습니다.";
+		}else if(!(pw.equals("world"))){
+			msg = "비밀번호가 일치하지 않습니다";
 		}else {
-			msg = "어린이 입니다";
+			msg = "로그인 성공!";
+			model.addAttribute("result",msg);
+			return "oper";             // oper.html을 열어라
 		}
-		model.addAttribute("result",num);
-		return "oper";             // oper.html을 열어라
-		
+		model.addAttribute("result",msg);
+		return "oper2";             // oper2.html을 열어라
+	
 	}
 }
