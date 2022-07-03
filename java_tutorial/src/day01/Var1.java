@@ -13,5 +13,5 @@ public class Var1 {
 		System.out.print("반갑습니다");
 		System.out.println();
 		System.out.println(변수1+"를 공부합니다");
-	}
+		}
 }

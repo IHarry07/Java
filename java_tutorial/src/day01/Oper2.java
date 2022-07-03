@@ -15,5 +15,5 @@ public class Oper2 {
 		num1 = 국어+영어+수학;
 		num2 = (국어+영어+수학)/3;
 		System.out.println("합계 : "+num1+"점, 평균 : "+num2+"점");
-	}
+		}
 }
