@@ -5,6 +5,7 @@ public class StringClass2 {
 		Quiz2 q = new Quiz2();
 		q.order1();
 		q.order2();
+		
 	}
 }
 
@@ -23,18 +24,21 @@ class Quiz2{
 	
 	public void order1() {
 		num = info1.indexOf("A");
-		result1 = info1.substring(num+7, num+9);
-		if(result1.equals("01")) {
-		name = result1.replace("01", "에스프레소");
+		result1 = info1.substring(num+6, num+9);
+		if(result1.equals("A01")) {
+		name = result1.replace("A01", "에스프레소");
 			}
-		else if(result1.equals("02")) {
-		name = result1.replace("02", "아메리카노");
+		else if(result1.equals("A02")) {
+		name = result1.replace("A02", "아메리카노");
 		}
-		else if(result1.equals("03")) {
-		name = result1.replace("03", "카푸치노");
+		else if(result1.equals("A03")) {
+		name = result1.replace("A03", "카푸치노");
 		}
-		else if(result1.equals("04")) {
-		name = result1.replace("04", "카페라떼");
+		else if(result1.equals("A04")) {
+		name = result1.replace("A04", "카페라떼");
+		}
+		else if(result1.equals("E01")) {
+		name = result1.replace("E01", "오렌지주스");
 		}
 		num = info1.indexOf("num");
 		result2 = info1.substring(num-4, num);
@@ -58,6 +62,9 @@ class Quiz2{
 		}
 		else if(result1.equals("04")) {
 		name = result1.replace("04", "카페라떼");
+		}
+		else if(result1.equals("E01")) {
+			name = result1.replace("E01", "오렌지주스");
 		}
 		num = info2.indexOf("num");
 		result2 = info2.substring(num-4, num);

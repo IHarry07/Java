@@ -5,4 +5,6 @@ import com.example.demo.model.User;
 
 public interface UserService {
 	List<User> getAllUser();			// {}없음	
+	
+	User getUserById(Long id);
 }
