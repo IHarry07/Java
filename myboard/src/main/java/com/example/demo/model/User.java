@@ -34,14 +34,12 @@ public class User {
 		this.email = email;
 	}
 	
-	public Long getNo() {
+	public Long getId() {
 		return id;
 	}
-	
-	public void setNo(Long id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
-	
 	public String getFirst_name() {
 		return first_name;
 	}

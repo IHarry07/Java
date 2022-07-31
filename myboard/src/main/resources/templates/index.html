@@ -86,7 +86,7 @@
 		<td th:text="${use.last_name}"></td>
 		<td th:text="${use.email}"></td>
 		<td>
-			<a class = "btn btn-warning">수정하기</a>
+			<a class="btn btn-warning" th:href="@{edit/{id}(id=${use.id})}">수정하기</a>
 			<a class = "btn btn-danger">삭제하기</a>
 		</td>
 	</tr>
